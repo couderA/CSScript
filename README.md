@@ -15,15 +15,12 @@ Run `install.bat`.
 
 Run `start.bat`.
 
-[Overlay](http://localhost:3000/)
-
-[Admin](http://localhost:3000/admin)
-
-[Recap](http://localhost:3000/recap)
-
-[Stats](http://localhost:3000/stats)
-
-[Graphs](http://localhost:3000/graphs)
+Here are all the URLs available:
+- [Overlay](http://localhost:3000/)
+- [Admin](http://localhost:3000/admin)
+- [Recap](http://localhost:3000/recap)
+- [Stats](http://localhost:3000/stats)
+- [Graphs](http://localhost:3000/graphs)
 
 ## Credits
 
