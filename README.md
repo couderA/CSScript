@@ -1,4 +1,4 @@
-# PS2 COmmunity Smash Script
+# PS2 Community Smash Script
 
 ![Script Demo](https://www.youtube.com/watch?v=BG4qZ6DZ6q4)
 
