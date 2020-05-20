@@ -1,6 +1,5 @@
 # PS2 Community Smash Script
-
-[[Watch the video](http://i3.ytimg.com/vi/BG4qZ6DZ6q4/maxresdefault.jpg)]https://www.youtube.com/watch?v=BG4qZ6DZ6q4)
+[![Watch the video](http://img.youtube.com/vi/BG4qZ6DZ6q4/0.jpg)](http://www.youtube.com/watch?v=BG4qZ6DZ6q4)
 
 ## Getting Started
 
