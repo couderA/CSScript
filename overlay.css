@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "bigNoodle";
+  src: url("Font/big_noodle_titling.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "OPTIE";
+  src: url("Font/OPTIEdgarBold-Extended.otf") format('truetype');
+}
+
+body {
+  font-family: "bigNoodle";
+  font-weight: inherit;
+  font-size: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  height: 1080px;
+  width: 1920px;
+}
+
+:root{
+  --color-tr-light: rgb(185, 13, 1);
+  --color-tr-dark: rgb(150, 17, 0);
+  --color-vs-light: rgb(97, 37, 151);
+  --color-vs-dark: rgb(70, 21, 128);
+  --color-nc-light: rgb(29, 70, 152);
+  --color-nc-dark: rgb(23, 54, 118);
+  --color-team1-light: var(--color-tr-light);
+  --color-team1-dark: var(--color-tr-dark);
+  --color-team2-light: var(--color-nc-light);
+  --color-team2-dark: var(--color-nc-dark);
+  --percent: 50%;
+}
+
+#Background {
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#Background.NC-TR {
+  background-image: url(PNG/testOverlay-NC-TR.png);
+}
+#Background.NC-VS {
+  background-image: url(PNG/testOverlay-NC-VS.png);
+}
+#Background.TR-NC {
+  background-image: url(PNG/testOverlay-TR-NC.png);
+}
+#Background.TR-VS {
+  background-image: url(PNG/testOverlay-TR-VS.png);
+}
+#Background.VS-TR {
+  background-image: url(PNG/testOverlay-VS-TR.png);
+}
+#Background.VS-NC {
+  background-image: url(PNG/testOverlay-VS-NC.png);
+}
+
+.ScoreContainer {
+  width: 1000px;
+  font-family: "OPTIE";
+  position: absolute;
+  color: white;
+  left:  calc(50% - 500px);
+  text-align: center;
+  margin-top: 31px;
+}
+
+.TimerContainer {
+  width: 110px;
+  font-family: "OPTIE";
+  position: absolute;
+  color: white;
+  left:  calc(50% - 55px);
+  text-align: center;
+  margin-top: 142px;
+  font-size: 1.3em;
+}
+
+.NotifContainer {
+  z-index: 5;
+  width: 784px;
+  height: 57px;
+  font-family: "OPTIE";
+  position: absolute;
+  color: white;
+  left:  calc(50% - 392px);
+  text-align: center;
+  margin-top: 119px;
+  font-size: 0.8em;
+}
+
+.NotifContainer .team1 {
+  height: 57px;
+  width: 392px;
+  padding: 25px 57px 0px 42px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url(PNG/notifTeam1.png);
+  transition: top 1s;
+}
+
+.NotifContainer .team1.hidden {
+  top: -60px;
+  transition: top 1s;
+}
+
+.NotifContainer .team2 {
+  height: 57px;
+  width: 392px;
+  padding: 25px 42px 0px 57px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-image: url(PNG/notifTeam2.png);
+  transition: top 1s;
+}
+
+.NotifContainer .team2.hidden {
+  top: -60px;
+  transition: top 1s;
+}
+
+.BottomContainer {
+  width: 630px;
+  font-family: "OPTIE";
+  position: absolute;
+  color: white;
+  left:  calc(50% - 315px);
+  bottom: 0px;
+  text-align: center;
+}
+
+.BottomContainer .caster {
+  width: 140px;
+  margin-top: 6px;
+  font-size: 1.1em;
+}
+
+.BottomContainer .caster:nth-child(1) {
+  margin-left: 12px;
+}
+
+.BottomContainer .caster:nth-child(3) {
+  margin-right: 12px;
+}
+
+.BottomContainer .info {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+
+.ScoreContainer .name {
+  margin-top: 6px;
+}
+
+.ScoreContainer .score {
+  width: 114px;
+}
+
+.ScoreContainer .team1 .score {
+  margin-right: 67px;
+}
+
+.ScoreContainer .team2 .score {
+  margin-left: 67px;
+}
+
+.progress_bar {
+  height: 50px;
+  background: linear-gradient(
+    90deg,
+    var(--color-team1-dark) 0%,
+    var(--color-team1-light) calc(var(--percent) - 1%),
+    rgb(110, 85, 25) calc(var(--percent) - 0.7%),
+    rgb(235, 224, 146) calc(var(--percent) - 0.2%),
+    rgb(255, 255, 255) var(--percent),
+    rgb(235, 224, 146) calc(var(--percent) + 0.2%),
+    rgb(110, 85, 25) calc(var(--percent) + 0.7%),
+    var(--color-team2-light) calc(var(--percent) + 1%),
+    var(--color-team2-dark) 100%);
+    border-radius: 4px;
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  }
+
+
+  .centered {
+    text-align: center;
+  }
+
+  .statsBox {
+    position: absolute;
+    z-index: 5;
+    color: white;
+  }
+
+  .statsBox h5{
+    margin-bottom: 2px;
+  }
+
+  .statsBox .row:nth-child(3) {
+    margin-top: 4px;
+  }
+
+  .statsBox.team1 > h3 {
+    text-align: left;
+  }
+
+  .statsBox.team2 > h3 {
+    text-align: right;
+  }
+
+  .statsBox.team1 {
+    top: 0px;
+    left: 0px;
+    transition: top 1s, left 1s;
+  }
+
+  .statsBox.team1.hidden {
+    left: -900px;
+    top: -300px;
+    transition: top 1s, left 1s;
+  }
+
+
+  .statsBox.team2 {
+    top: 0px;
+    right: 0px;
+    transition: top 1s, right 1s;
+  }
+
+  .statsBox.team2.hidden {
+    right: -900px;
+    top: -300px;
+    transition: top 1s, right 1s;
+  }
+
+  .statsBoxLarge.team1 {
+    background-image: url(PNG/bigBoxStatsTeam1.png);
+  }
+
+  .statsBoxSmall.team1 {
+    background-image: url(PNG/smallBoxStatsTeam1.png);
+  }
+
+  .statsBoxLarge.team2 {
+    background-image: url(PNG/bigBoxStatsTeam2.png);
+  }
+
+  .statsBoxSmall.team2 {
+    background-image: url(PNG/smallBoxStatsTeam2.png);
+  }
+
+  .statsBox.statsBoxLarge {
+    width:592px;
+    height:250px;
+    padding-top: 61px;
+    padding-bottom: 45px;
+  }
+
+  .statsBox.statsBoxLarge.team1  {
+    padding-left: 20px;
+    padding-right: 98px;
+  }
+
+  .statsBox.statsBoxLarge.team2  {
+    padding-right: 20px;
+    padding-left: 98px;
+  }
+
+  .statsBox.statsBoxSmall {
+    width:582px;
+    height:225px;
+    padding-top: 61px;
+    padding-bottom: 34px;
+  }
+
+  .statsBox.statsBoxSmall.team1  {
+    padding-left: 20px;
+    padding-right: 88px;
+  }
+
+  .statsBox.statsBoxSmall.team2  {
+    padding-right: 20px;
+    padding-left: 88px;
+
+  }
+
+  .ProgressBar {
+    z-index: 5;
+    width:820px;
+    height:176px;
+    padding: 10px 40px;
+    color: white;
+    background-image: url(PNG/boxPregressBar.png);
+    bottom: 0px;
+    position: absolute;
+    left:  calc(50% - 410px);
+    transition: bottom 1s;
+  }
+
+  .ProgressBar.hidden {
+    bottom: -300px;
+    transition: bottom 1s;
+  }
+
+  .ProgressBar h1 {
+    text-align: center;
+  }

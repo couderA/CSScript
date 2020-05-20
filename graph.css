@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "bigNoodle";
+  src: url("Font/big_noodle_titling.ttf") format('truetype');
+}
+
+body {
+  font-family: "bigNoodle";
+  font-weight: inherit;
+  font-size: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  background-image: url("./PNG/backgroundRecap.png");
+  height: 1080px;
+  width: 1920px;
+}
+
+.Title{
+  text-align: center;
+  color: white;
+}
+
+.SubTitle{
+  text-align: center;
+  color: white;
+}

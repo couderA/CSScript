@@ -1,0 +1,202 @@
+{"payload":{"attacker_character_id":"5428962001650195265","attacker_fire_mode_id":"119","attacker_loadout_id":"20","attacker_vehicle_id":"0","attacker_weapon_id":"80","character_id":"5428812948096328241","character_loadout_id":"11","event_name":"Death","is_headshot":"0","timestamp":"1589012718","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428016459737550593","attacker_fire_mode_id":"7534","attacker_loadout_id":"6","attacker_vehicle_id":"0","attacker_weapon_id":"7236","character_id":"5428995209016040897","character_loadout_id":"17","event_name":"Death","is_headshot":"1","timestamp":"1589012718","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428713425532891729","attacker_fire_mode_id":"49","attacker_loadout_id":"3","attacker_vehicle_id":"0","attacker_weapon_id":"44505","character_id":"5428962001674161377","character_loadout_id":"15","event_name":"Death","is_headshot":"0","timestamp":"1589012719","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"8259611662668293137","attacker_fire_mode_id":"7300","attacker_loadout_id":"11","attacker_vehicle_id":"0","attacker_weapon_id":"7128","character_id":"8282108246645592817","character_loadout_id":"3","event_name":"Death","is_headshot":"0","timestamp":"1589012719","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428998138654842321","attacker_fire_mode_id":"129","attacker_loadout_id":"8","attacker_vehicle_id":"0","attacker_weapon_id":"88","character_id":"5428021759057486769","character_loadout_id":"15","event_name":"Death","is_headshot":"0","timestamp":"1589012719","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"8253534815449102209","attacker_fire_mode_id":"80431","attacker_loadout_id":"3","attacker_vehicle_id":"0","attacker_weapon_id":"6003850","character_id":"5428010917255731681","character_loadout_id":"20","event_name":"Death","is_headshot":"0","timestamp":"1589012720","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428835589029041937","attacker_fire_mode_id":"115","attacker_loadout_id":"17","attacker_vehicle_id":"0","attacker_weapon_id":"44","character_id":"5428998138654842321","character_loadout_id":"8","event_name":"Death","is_headshot":"1","timestamp":"1589012720","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428680768962628161","attacker_fire_mode_id":"7362","attacker_loadout_id":"10","attacker_vehicle_id":"0","attacker_weapon_id":"7190","character_id":"5428885884726742913","character_loadout_id":"5","event_name":"Death","is_headshot":"0","timestamp":"1589012720","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428629918261393809","attacker_fire_mode_id":"80167","attacker_loadout_id":"20","attacker_vehicle_id":"0","attacker_weapon_id":"804249","character_id":"5428998138654832657","character_loadout_id":"11","event_name":"Death","is_headshot":"0","timestamp":"1589012720","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"8250288048343616641","attacker_fire_mode_id":"29001","attacker_loadout_id":"15","attacker_vehicle_id":"0","attacker_weapon_id":"29001","character_id":"5428652544618744113","character_loadout_id":"11","event_name":"Death","is_headshot":"1","timestamp":"1589012720","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428201940314636721","attacker_fire_mode_id":"24108","attacker_loadout_id":"1","attacker_vehicle_id":"0","attacker_weapon_id":"24008","character_id":"5428990295166591617","character_loadout_id":"20","event_name":"Death","is_headshot":"1","timestamp":"1589012720","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"8289174405223009473","attacker_fire_mode_id":"7747","attacker_loadout_id":"8","attacker_vehicle_id":"0","attacker_weapon_id":"7365","character_id":"5428985062301481057","character_loadout_id":"6","event_name":"Death","is_headshot":"0","timestamp":"1589012720","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428011263446446593","attacker_fire_mode_id":"7575","attacker_loadout_id":"20","attacker_vehicle_id":"0","attacker_weapon_id":"7277","character_id":"5428870188932399441","character_loadout_id":"11","event_name":"Death","is_headshot":"0","timestamp":"1589012721","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428985062307154353","attacker_fire_mode_id":"661","attacker_loadout_id":"6","attacker_vehicle_id":"0","attacker_weapon_id":"1044","character_id":"5428602376662034145","character_loadout_id":"8","event_name":"Death","is_headshot":"0","timestamp":"1589012721","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428995208996900145","attacker_fire_mode_id":"11","attacker_loadout_id":"15","attacker_vehicle_id":"0","attacker_weapon_id":"21","character_id":"5428237455236412385","character_loadout_id":"3","event_name":"Death","is_headshot":"0","timestamp":"1589012721","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428196144917237665","attacker_fire_mode_id":"80034","attacker_loadout_id":"11","attacker_vehicle_id":"0","attacker_weapon_id":"285","character_id":"5428870188950915265","character_loadout_id":"20","event_name":"Death","is_headshot":"0","timestamp":"1589012721","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428985062307413553","attacker_fire_mode_id":"28101","attacker_loadout_id":"11","attacker_vehicle_id":"0","attacker_weapon_id":"28001","character_id":"5428995209019858897","character_loadout_id":"20","event_name":"Death","is_headshot":"0","timestamp":"1589012721","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428021759072446353","attacker_fire_mode_id":"114","attacker_loadout_id":"10","attacker_vehicle_id":"0","attacker_weapon_id":"43","character_id":"5428105192792489425","character_loadout_id":"17","event_name":"Death","is_headshot":"0","timestamp":"1589012721","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428629918261393809","attacker_fire_mode_id":"80168","attacker_loadout_id":"20","attacker_vehicle_id":"0","attacker_weapon_id":"804249","character_id":"5428995209021009297","character_loadout_id":"11","event_name":"Death","is_headshot":"0","timestamp":"1589012722","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428995209021009297","attacker_fire_mode_id":"39000","attacker_loadout_id":"11","attacker_vehicle_id":"0","attacker_weapon_id":"39000","character_id":"5428629918261393809","character_loadout_id":"20","event_name":"Death","is_headshot":"0","timestamp":"1589012722","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428995208996900145","attacker_fire_mode_id":"11","attacker_loadout_id":"15","attacker_vehicle_id":"0","attacker_weapon_id":"21","character_id":"5428894103320034801","character_loadout_id":"3","event_name":"Death","is_headshot":"1","timestamp":"1589012723","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428196144917237665","attacker_fire_mode_id":"80034","attacker_loadout_id":"11","attacker_vehicle_id":"0","attacker_weapon_id":"285","character_id":"5428191068400097009","character_loadout_id":"20","event_name":"Death","is_headshot":"1","timestamp":"1589012723","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428990295204455553","attacker_fire_mode_id":"26104","attacker_loadout_id":"15","attacker_vehicle_id":"0","attacker_weapon_id":"26004","character_id":"5428835589028695633","character_loadout_id":"4","event_name":"Death","is_headshot":"1","timestamp":"1589012723","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428752043497565329","attacker_fire_mode_id":"781","attacker_loadout_id":"20","attacker_vehicle_id":"0","attacker_weapon_id":"1894","character_id":"8278814874315574865","character_loadout_id":"13","event_name":"Death","is_headshot":"0","timestamp":"1589012724","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428035526965752401","attacker_fire_mode_id":"108","attacker_loadout_id":"11","attacker_vehicle_id":"0","attacker_weapon_id":"14","character_id":"5428868189738256289","character_loadout_id":"13","event_name":"Death","is_headshot":"0","timestamp":"1589012724","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428196144917237665","attacker_fire_mode_id":"80034","attacker_loadout_id":"11","attacker_vehicle_id":"0","attacker_weapon_id":"285","character_id":"5428998138654688641","character_loadout_id":"18","event_name":"Death","is_headshot":"0","timestamp":"1589012725","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428713425532891729","attacker_fire_mode_id":"27101","attacker_loadout_id":"3","attacker_vehicle_id":"0","attacker_weapon_id":"27001","character_id":"8279483120747550401","character_loadout_id":"15","event_name":"Death","is_headshot":"0","timestamp":"1589012725","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428990295194494849","attacker_fire_mode_id":"70019","attacker_loadout_id":"6","attacker_vehicle_id":"0","attacker_weapon_id":"802106","character_id":"5428998138654691889","character_loadout_id":"15","event_name":"Death","is_headshot":"1","timestamp":"1589012725","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428021759077933457","attacker_fire_mode_id":"80444","attacker_loadout_id":"4","attacker_vehicle_id":"0","attacker_weapon_id":"6004209","character_id":"5428995209022554225","character_loadout_id":"8","event_name":"Death","is_headshot":"1","timestamp":"1589012725","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428962001674795201","attacker_fire_mode_id":"2","attacker_loadout_id":"1","attacker_vehicle_id":"0","attacker_weapon_id":"2","character_id":"5428224050368354785","character_loadout_id":"11","event_name":"Death","is_headshot":"0","timestamp":"1589012726","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428196144917237665","attacker_fire_mode_id":"80034","attacker_loadout_id":"11","attacker_vehicle_id":"0","attacker_weapon_id":"285","character_id":"8271049455860246433","character_loadout_id":"19","event_name":"Death","is_headshot":"0","timestamp":"1589012726","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428906932177126257","attacker_fire_mode_id":"104","attacker_loadout_id":"4","attacker_vehicle_id":"0","attacker_weapon_id":"4","character_id":"5428746250853618769","character_loadout_id":"21","event_name":"Death","is_headshot":"0","timestamp":"1589012726","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428087443915098097","attacker_fire_mode_id":"15000","attacker_loadout_id":"14","attacker_vehicle_id":"0","attacker_weapon_id":"15000","character_id":"5428995209019858897","character_loadout_id":"20","event_name":"Death","is_headshot":"1","timestamp":"1589012726","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428985062306857249","attacker_fire_mode_id":"80441","attacker_loadout_id":"13","attacker_vehicle_id":"0","attacker_weapon_id":"6004120","character_id":"5428906932175373505","character_loadout_id":"20","event_name":"Death","is_headshot":"0","timestamp":"1589012726","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"8288279587968843169","attacker_fire_mode_id":"40001","attacker_loadout_id":"3","attacker_vehicle_id":"0","attacker_weapon_id":"40001","character_id":"5428998138654703281","character_loadout_id":"8","event_name":"Death","is_headshot":"0","timestamp":"1589012726","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428985062302020977","attacker_fire_mode_id":"119","attacker_loadout_id":"20","attacker_vehicle_id":"0","attacker_weapon_id":"80","character_id":"8254139212911264561","character_loadout_id":"4","event_name":"Death","is_headshot":"0","timestamp":"1589012727","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+
+{"payload":{"attacker_character_id":"5428804606016826897","attacker_loadout_id":"10","attacker_vehicle_id":"9","attacker_weapon_id":"4900","character_id":"8254139212910886001","event_name":"VehicleDestroy","facility_id":"0","faction_id":"2","timestamp":"1589012719","vehicle_id":"14","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428985062283081185","attacker_loadout_id":"19","attacker_vehicle_id":"3","attacker_weapon_id":"3153","character_id":"5428995209021742497","event_name":"VehicleDestroy","facility_id":"0","faction_id":"3","timestamp":"1589012720","vehicle_id":"1","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428995209019386321","attacker_loadout_id":"17","attacker_vehicle_id":"0","attacker_weapon_id":"802768","character_id":"5428995209021733633","event_name":"VehicleDestroy","facility_id":"0","faction_id":"2","timestamp":"1589012724","vehicle_id":"3","world_id":"13","zone_id":"98"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428597303256200753","attacker_loadout_id":"5","attacker_vehicle_id":"8","attacker_weapon_id":"4604","character_id":"5428990295204336257","event_name":"VehicleDestroy","facility_id":"0","faction_id":"3","timestamp":"1589012724","vehicle_id":"9","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428013399853323857","attacker_loadout_id":"6","attacker_vehicle_id":"0","attacker_weapon_id":"33004","character_id":"5428013399853323857","event_name":"VehicleDestroy","facility_id":"0","faction_id":"2","timestamp":"1589012725","vehicle_id":"3","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+
+
+{"payload":{"attacker_character_id":"5428597303256200753","attacker_loadout_id":"5","attacker_vehicle_id":"8","attacker_weapon_id":"4604","character_id":"8262937017477395905","event_name":"VehicleDestroy","facility_id":"0","faction_id":"3","timestamp":"1589012720","vehicle_id":"9","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+{"payload":{"attacker_character_id":"5428597303256200753","attacker_fire_mode_id":"356","attacker_loadout_id":"5","attacker_vehicle_id":"8","attacker_weapon_id":"4604","character_id":"8262937017477395905","character_loadout_id":"12","event_name":"Death","is_headshot":"0","timestamp":"1589012720","world_id":"13","zone_id":"2"},"service":"event","type":"serviceMessage"}
+
+
+
+{ amount: '75',
+  character_id: '8272322605499607889',
+  event_name: 'GainExperience',
+  experience_id: '7',
+  loadout_id: '11',
+  other_id: '5428998138688662545',
+  timestamp: '1589635863',
+  world_id: '13',
+  zone_id: '8' }
+{ amount: '100',
+  character_id: '5428977504231309745',
+  event_name: 'GainExperience',
+  experience_id: '53',
+  loadout_id: '4',
+  other_id: '5428995209022560593',
+  timestamp: '1589635863',
+  world_id: '13',
+  zone_id: '8' }
+{ amount: '75',
+  character_id: '8277098526450960273',
+  event_name: 'GainExperience',
+  experience_id: '7',
+  loadout_id: '11',
+  other_id: '8250939060693103617',
+  timestamp: '1589635865',
+  world_id: '13',
+  zone_id: '2' }
+{ amount: '75',
+  character_id: '5428998138688669857',
+  event_name: 'GainExperience',
+  experience_id: '7',
+  loadout_id: '11',
+  other_id: '5428031585325185441',
+  timestamp: '1589635866',
+  world_id: '13',
+  zone_id: '2' }
+{ amount: '75',
+  character_id: '5428123302629873953',
+  event_name: 'GainExperience',
+  experience_id: '7',
+  loadout_id: '11',
+  other_id: '8289857657759638593',
+  timestamp: '1589635866',
+  world_id: '13',
+  zone_id: '2' }
+
+
+
+
+  { attacker_character_id: '5428345446425186865',
+    attacker_fire_mode_id: '80449',
+    attacker_loadout_id: '12',
+    attacker_vehicle_id: '0',
+    attacker_weapon_id: '6004216',
+    character_id: '5428881416757025105',
+    character_loadout_id: '7',
+    event_name: 'Death',
+    is_headshot: '0',
+    timestamp: '1589646740',
+    world_id: '19',
+    zone_id: '4' }
+  { amount: '75',
+    character_id: '5428754945596146721',
+    event_name: 'GainExperience',
+    experience_id: '7',
+    loadout_id: '4',
+    other_id: '5428881416757025105',
+    timestamp: '1589646751',
+    world_id: '19',
+    zone_id: '4' }
+
+
+    { duration_held: '1086',
+  event_name: 'FacilityControl',
+  facility_id: '211',
+  new_faction_id: '3',
+  old_faction_id: '3',
+  outfit_id: '0',
+  timestamp: '1589738979',
+  world_id: '13',
+  zone_id: '2' }
+{ duration_held: '4289',
+  event_name: 'FacilityControl',
+  facility_id: '208001',
+  new_faction_id: '1',
+  old_faction_id: '3',
+  outfit_id: '37568950690961582',
+  timestamp: '1589739001',
+  world_id: '13',
+  zone_id: '6' }
+{ duration_held: '3924',
+  event_name: 'FacilityControl',
+  facility_id: '209003',
+  new_faction_id: '3',
+  old_faction_id: '1',
+  outfit_id: '37511178772817792',
+  timestamp: '1589739009',
+  world_id: '13',
+  zone_id: '6' }
+{ duration_held: '937',
+  event_name: 'FacilityControl',
+  facility_id: '400130',
+  new_faction_id: '1',
+  old_faction_id: '2',
+  outfit_id: '37560275229232032',
+  timestamp: '1589739026',
+  world_id: '13',
+  zone_id: '2' }
+{ duration_held: '6848',
+  event_name: 'FacilityControl',
+  facility_id: '304000',
+  new_faction_id: '3',
+  old_faction_id: '3',
+  outfit_id: '0',
+  timestamp: '1589739032',
+  world_id: '13',
+  zone_id: '4' }
+{ duration_held: '350',
+  event_name: 'FacilityControl',
+  facility_id: '205002',
+  new_faction_id: '1',
+  old_faction_id: '1',
+  outfit_id: '37509875836678126',
+  timestamp: '1589739047',
+  world_id: '13',
+  zone_id: '6' }
+{ duration_held: '22898',
+  event_name: 'FacilityControl',
+  facility_id: '217000',
+  new_faction_id: '2',
+  old_faction_id: '2',
+  outfit_id: '0',
+  timestamp: '1589739062',
+  world_id: '13',
+  zone_id: '6' }
+{ duration_held: '476',
+  event_name: 'FacilityControl',
+  facility_id: '4030',
+  new_faction_id: '2',
+  old_faction_id: '1',
+  outfit_id: '37570391403492380',
+  timestamp: '1589739070',
+  world_id: '13',
+  zone_id: '2' }
+{ duration_held: '452',
+  event_name: 'FacilityControl',
+  facility_id: '4010',
+  new_faction_id: '1',
+  old_faction_id: '2',
+  outfit_id: '37568950690976096',
+  timestamp: '1589739073',
+  world_id: '13',
+  zone_id: '2' }

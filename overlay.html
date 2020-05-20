@@ -1,0 +1,174 @@
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+  <link rel="stylesheet" href="./overlay.css">
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+</head>
+<body>
+  <div class="ProgressBar hidden">
+    <div class="row">
+      <div class="col"><h1 id="displayerTitle">Kill</h1></div>
+    </div>
+    <div class="row">
+      <div class="col-2"><h1 id="valteam1">50</h1></div><div class="progress_bar col-sm"></div><div class="col-2"><h1 id="valteam2">50</h1></div>
+    </div>
+  </div>
+
+  <div class="VehG statsBox statsBoxLarge team1 hidden">
+    <h3>Ground Vehicles</h3>
+    <div id="IconVehG" class="row">
+      <div class="col-2"></div>
+      <div class="col centered"><img src="./PNG/Icon_Flash.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Harasser.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Sunderer.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_lightning.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Vanguard.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Ant.png" alt=""></div>
+    </div>
+    <div id="KillVehG" class="row">
+      <h5 class="col-2">Kills</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+    <div id="DestroyedVehG" class="row">
+      <h5 class="col-2">Destroyed</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+    <div id="LostVehG" class="row">
+      <h5 class="col-2">Lost</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+  </div>
+  <div class="VehA statsBox statsBoxLarge team1 hidden">
+    <h3>Air Vehicles</h3>
+    <div id="IconVehA" class="row">
+      <div class="col-3"></div>
+      <div class="col centered"><img src="./PNG/Icon_Reaver.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Valkyrie.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Liberator.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Galaxy.png" alt=""></div>
+    </div>
+    <div id="KillVehA" class="row">
+      <h5 class="col-3">Kills</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+    <div  id="DestroyedVehA" class="row">
+      <h5 class="col-3">Destroyed</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+    <div id="LostVehA" class="row">
+      <h5 class="col-3">Lost</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+  </div>
+  <div class="Inf statsBox statsBoxSmall team1 hidden">
+    <h3>Infantry</h3>
+    <div id="IconInf" class="row">
+      <div class="col-2"></div>
+      <div class="col centered"><img src="./PNG/heavy.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/medic.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/infil.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/light.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/engi.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/max.png" alt=""></div>
+    </div>
+    <div id="KillInf" class="row">
+      <h5 class="col-2">Kills</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+    <div id="DeathInf" class="row">
+      <h5 class="col-2">Death</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+  </div>
+  <div class="VehG statsBox statsBoxLarge team2 hidden">
+    <h3>Ground Vehicles</h3>
+    <div id="IconVehG" class="row">
+      <div class="col-2"></div>
+      <div class="col centered"><img src="./PNG/Icon_Flash.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Harasser.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Sunderer.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_lightning.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Vanguard.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Ant.png" alt=""></div>
+    </div>
+    <div id="KillVehG" class="row">
+      <h5 class="col-2">Kills</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+    <div id="DestroyedVehG" class="row">
+      <h5 class="col-2">Destroyed</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+    <div id="LostVehG" class="row">
+      <h5 class="col-2">Lost</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+  </div>
+  <div class="VehA statsBox statsBoxLarge team2 hidden">
+    <h3>Air Vehicles</h3>
+    <div id="IconVehA" class="row">
+      <div class="col-3"></div>
+      <div class="col centered"><img src="./PNG/Icon_Reaver.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Valkyrie.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Liberator.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/Icon_Galaxy.png" alt=""></div>
+    </div>
+    <div id="KillVehA" class="row">
+      <h5 class="col-3">Kills</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+    <div  id="DestroyedVehA" class="row">
+      <h5 class="col-3">Destroyed</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+    <div id="LostVehA" class="row">
+      <h5 class="col-3">Lost</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+  </div>
+  <div class="Inf statsBox statsBoxSmall team2 hidden">
+    <h3>Infantry</h3>
+    <div id="IconInf" class="row">
+      <div class="col-2"></div>
+      <div class="col centered"><img src="./PNG/heavy.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/medic.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/infil.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/light.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/engi.png" alt=""></div>
+      <div class="col centered"><img src="./PNG/max.png" alt=""></div>
+    </div>
+    <div id="KillInf" class="row">
+      <h5 class="col-2">Kills</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+    <div id="DeathInf" class="row">
+      <h5 class="col-2">Death</h5><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div><div class="col centered"></div>
+    </div>
+  </div>
+  <div class="NotifContainer">
+    <div class="team1 d-inline-block hidden">
+      Saurva South Fortress Cap
+    </div>
+    <div class="team2 d-inline-block hidden">
+      Indar Excavation Site Cap
+    </div>
+  </div>
+  <div id="Background">
+    <div class="ScoreContainer">
+      <div class="row">
+      <div class="col team1">
+        <div class="row">
+          <h3 class="name col"></h3>
+          <h1 class="score"></h1>
+        </div>
+      </div>
+      <div class="col team2">
+        <div class="row">
+          <h1 class="score"></h1>
+          <h3 class="name col"></h3>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="TimerContainer">
+    </div>
+    <div class="BottomContainer">
+      <div class="row">
+        <div id="caster1" class="caster"></div>
+        <div class="info col">COMMUNITY SMASH 8</div>
+        <div id="caster2" class="caster"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="overlay.js"></script>
+</html>

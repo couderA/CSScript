@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "bigNoodle";
+  src: url("Font/big_noodle_titling.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "OPTIE";
+  src: url("Font/OPTIEdgarBold-Extended.otf") format('truetype');
+}
+
+body {
+  font-family: "bigNoodle";
+  font-weight: inherit;
+  font-size: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: white;
+  background-image: url("./PNG/backgroundRecap.png");
+  height: 1080px;
+  width: 1920px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.statsBox.team1 .row:nth-child(2) {
+  margin-top: 4px;
+}
+
+.statsBox.team2 .row:nth-child(2) {
+  margin-top: 4px;
+}
+
+.statsBox.team1 > h3 {
+  text-align: left;
+}
+
+.statsBox.team2 > h3 {
+  text-align: right;
+}
+
+
+.stats div.row:first-child {
+  margin-top: 36px;
+}
+
+.Title{
+  text-align: center;
+}
