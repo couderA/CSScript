@@ -199,11 +199,12 @@ function itsDeathData(data) {
 }
 
 function itsVehicleDestroyData(data) {
-  factionAttacker = loadouts.getFactionForLoadout(data.attacker_loadout_id)
-  vehicleAttacker = vehicles.getVehicleForLoadout(data.attacker_vehicle_id)
-  teamAttack = team.getTeamFromFaction(factionAttacker)
-  if (teamAttack != undefined && vehicleAttacker != "unknwon"){
+  var factionAttacker = loadouts.getFactionForLoadout(data.attacker_loadout_id)
+  var vehicleAttacker = vehicles.getVehicleForLoadout(data.attacker_vehicle_id)
+  var teamAttack = team.getTeamFromFaction(factionAttacker)
+  if (teamAttack != undefined){
     if (data.attacker_character_id == data.character_id) { // own vehicle destroyed
+      vehicleAttacker = vehicles.getVehicleForLoadout(data.vehicle_id)
       team.addVehicleLost(teamAttack.id, vehicleAttacker)
     } else {
       factionVictim = data.faction_id
@@ -213,7 +214,9 @@ function itsVehicleDestroyData(data) {
         if (factionAttacker == factionVictim) {  // ally vehicle destroyed
           team.addVehicleLost(teamAttack.id, vehicleVictim)
         } else if (teamVictim != undefined){ // ennemy vehicle killed
-          team.addVehicleKilled(teamAttack.id, vehicleAttacker)
+          if (vehicleAttacker != "unknwon") {
+            team.addVehicleKilled(teamAttack.id, vehicleAttacker)
+          }
           team.addVehicleLost(teamVictim.id, vehicleVictim)
         }
       }

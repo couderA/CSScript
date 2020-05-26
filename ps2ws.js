@@ -57,7 +57,6 @@ function subscribe(ws) {
 
   server_id = match.getServer();
   ws.send('{"service":"event","action":"subscribe","characters":["all"],"eventNames":["Death", "VehicleDestroy"],"worlds":["' + server_id +'"],"logicalAndCharactersWithWorlds":true}')
-  
   ws.send('{"service":"event","action":"subscribe","characters":["all"],"eventNames":[' + xpGainString + '],"worlds":["' + server_id +'"],"logicalAndCharactersWithWorlds":true}')
 
   ws.send('{"service":"event","action":"subscribe","worlds":["' + server_id +'"],"eventNames":["FacilityControl"]}');
@@ -81,11 +80,11 @@ function unsubscribe(ws) {
 }
 
 function startTheMatch() {
-    subscribe(ws);
+  subscribe(ws);
 }
 
 function stopTheMatch() {
-    unsubscribe(ws);
+  unsubscribe(ws);
 }
 
 exports.startTheMatch = startTheMatch;
