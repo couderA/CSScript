@@ -5,9 +5,6 @@ socket.emit('subscribe', {recap:true});
 $(function(){
 
   socket.on('recapData',function(data) {
-    console.log(data)
-
-
     var colorTeam1 = undefined
     if (data.t1.faction == 1) { //VS
       colorTeam1 = "#612597";

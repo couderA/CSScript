@@ -39,9 +39,6 @@ $(function(){
       var displayer = class_names[i]
       team1Number = teamOneData[displayer]
       overall = teamTwoData[displayer] + team1Number
-      if (displayer == "nanitesLost") {
-        console.log(teamOneData);
-      }
       var percent = (team1Number / overall) * 100
       if (isNaN(percent)) {
         percent = 50
