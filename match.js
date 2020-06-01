@@ -135,6 +135,7 @@ function refresh() {
     progressBar:progressBar,
     statsDisplayed:statsDisplayed
   });
+  timer.sendTimerInfo()
 }
 
 function computeScore() {

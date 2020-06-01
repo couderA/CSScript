@@ -149,6 +149,7 @@ $(function(){
   });
 
   socket.on('refresh',function(data) {
+    console.log(data)
     if (data.caster1) {
       $("#caster1").html(data.caster1)
     }
@@ -217,7 +218,6 @@ $(function(){
       $("#Background").removeClass();
       $("#Background").addClass(class_name)
     }
-
 
     $(".ScoreContainer .team1 .name").html(teamOneData.name)
     $(".ScoreContainer .team2 .name").html(teamTwoData.name)
