@@ -139,7 +139,7 @@ body {
 .BottomContainer .caster {
   width: 140px;
   margin-top: 6px;
-  font-size: 1.1em;
+  font-size: 1.0em;
 }
 
 .BottomContainer .caster:nth-child(1) {
