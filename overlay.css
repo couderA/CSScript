@@ -315,3 +315,8 @@ body {
   .ProgressBar h1 {
     text-align: center;
   }
+
+  .fc {
+    margin-top: 25px;
+    font-size: 0.7em;
+  }
