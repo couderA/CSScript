@@ -25,10 +25,29 @@ function getTimer() {
 let factionCountBase = [0, 0, 0, 0, 0]
 let numberOfbases = 1
 
-let server_id = 19
+let server_id = 0
 let continent_id = 0
 
+let hasBeenInit = false
+let hasStart = false
+
 let statsDisplayed = "None" // VehG || VehA || Inf || None
+
+function getAllInfo() {
+    return {
+      server:server_id,
+      continent:continent_id,
+      caster1:caster1,
+      caster2:caster2,
+      minutes:timer.getMinutes(),
+      team1:team.getT1(),
+      team2:team.getT2(),
+      progressBar: progressBar.visible == true ? progressBar.id : "None",
+      statsDisplayed:statsDisplayed,
+      hasBeenInit:hasBeenInit,
+      hasStart:hasStart
+    }
+}
 
 function setTimer(minutes) {
   timer.setMinutes(minutes)
@@ -71,6 +90,7 @@ function getContinent(id) {
 }
 
 function initializeMatch() {
+  hasBeenInit = true
   ps2api.getMap()
   team.teamsUpdate()
   refresh()
@@ -83,19 +103,24 @@ function getTime() {
 }
 
 function start() {
-  timer.startTimer()
-  ps2ws.startTheMatch()
-  time = timer.getTime()
-  let t1 = team.getT1()
-  let t2 = team.getT2()
-  graphs.addKillData(time, t1.kills, t2.kills)
-  let scoreT1 = Math.round((factionCountBase[t1.faction] / numberOfbases) * 100)
-  let scoreT2 = Math.round((factionCountBase[t2.faction] / numberOfbases) * 100)
-  graphs.addCaptureData(time, scoreT1, scoreT2)
-  graphs.startRecordingKillData()
+  if (hasStart == false) {
+    hasStart = true
+    timer.startTimer()
+    ps2ws.startTheMatch()
+    time = timer.getTime()
+    let t1 = team.getT1()
+    let t2 = team.getT2()
+    graphs.addKillData(time, t1.kills, t2.kills)
+    let scoreT1 = Math.round((factionCountBase[t1.faction] / numberOfbases) * 100)
+    let scoreT2 = Math.round((factionCountBase[t2.faction] / numberOfbases) * 100)
+    graphs.addCaptureData(time, scoreT1, scoreT2)
+    graphs.startRecordingKillData()
+  }
 }
 
 function stop() {
+  hasStart = false
+  hasBeenInit = false
   timer.stopTimer()
   ps2ws.stopTheMatch()
   time = timer.getTime()
@@ -110,6 +135,8 @@ function stop() {
 
 
 function matchEnded() {
+  hasBeenInit = false
+  hasStart = false
   ps2ws.stopTheMatch()
   time = timer.getTime()
   let t1 = team.getT1()
@@ -122,6 +149,8 @@ function matchEnded() {
 }
 
 function reset() {
+  hasStart = false
+  hasBeenInit = false
   timer.resetTimer()
   team.resetScore()
   graphs.stopRecordingKillData()
@@ -313,3 +342,4 @@ exports.sendCapNotification = sendCapNotification;
 exports.matchEnded = matchEnded;
 exports.getTime = getTime;
 exports.sendRecapData = sendRecapData;
+exports.getAllInfo = getAllInfo;

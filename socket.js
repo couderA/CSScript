@@ -9,6 +9,8 @@ module.exports = {
         socket.on('subscribe', function(data) {
           if (data && data.recap) {
             match.sendRecapData()
+          } else if (data && data.admin) {
+            send("broadcast", match.getAllInfo())
           } else {
             match.refresh()
             team.teamsUpdate()

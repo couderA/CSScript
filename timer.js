@@ -13,6 +13,9 @@ class Timer {
   setMinutes(minutes) {
     this.minutes = minutes;
   }
+  getMinutes(minutes) {
+    return this.minutes;
+  }
 
   sendTimerInfo() {
     if (this.endTime && this.currentTime) {
