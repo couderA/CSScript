@@ -4,6 +4,7 @@ const app     = require('./app.js'),
 
 let t1 = {
   id:1,
+  fc : '',
   name : '',
   faction : 0,
   score: 0,
@@ -23,6 +24,7 @@ let t1 = {
 
 let t2 = {
   id:2,
+  fc : '',
   name : '',
   faction : 0,
   score: 0,

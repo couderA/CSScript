@@ -18,12 +18,15 @@ module.exports = {
         });
         socket.on('initializeMatch', function(data) {
           match.setServer(data.server)
+          match.setSmashNumber(data.smashNumber)
           match.setContinent(data.continent)
           match.setCaster1(data.caster1)
           match.setCaster2(data.caster2)
           match.setTimer(data.minutes)
           team.setProperty(1, "name",  data.team1)
           team.setProperty(2, "name",  data.team2)
+          team.setProperty(1, "fc",  data.fc1)
+          team.setProperty(2, "fc",  data.fc2)
           team.setProperty(1, "faction",  data.factionTeam1)
           team.setProperty(2, "faction",  data.factionTeam2)
           match.initializeMatch()

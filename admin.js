@@ -5,8 +5,11 @@ $(function(){
   $( "#matchInitializer" ).submit(function( event ) {
     server = parseInt($("#selectServer").val())
     continent = parseInt($("#selectContinent").val())
+    smashNumber = $("#smashnumber").val()
     caster1 = $("#caster1").val().toUpperCase()
     caster2 = $("#caster2").val().toUpperCase()
+    fc1 = $("#fc1").val().toUpperCase()
+    fc2 = $("#fc2").val().toUpperCase()
     team1 = $("#team1").val().toUpperCase()
     team2 = $("#team2").val().toUpperCase()
     factionTeam1 = parseInt($("#selectFactionTeam1").val())
@@ -18,8 +21,11 @@ $(function(){
       socket.emit('initializeMatch', {
         server : server,
         continent : continent,
+        smashNumber: smashNumber,
         caster1 : caster1,
         caster2 : caster2,
+        fc1:fc1,
+        fc2:fc2,
         factionTeam1 : factionTeam1,
         factionTeam2 : factionTeam2,
         team1 : team1,
@@ -72,8 +78,11 @@ $(function(){
   socket.on('broadcast',function(data) {
     $("#selectServer").val(data.server)
     $("#selectContinent").val(data.continent)
+    $("#smashnumber").val(data.smashNumber)
     $("#caster1").val(data.caster1)
     $("#caster2").val(data.caster2)
+    $("#fc1").val(data.team1.fc)
+    $("#fc2").val(data.team2.fc)
     $("#team1").val(data.team1.name)
     $("#team2").val(data.team2.name)
     $("#selectFactionTeam1").val(data.team1.faction)

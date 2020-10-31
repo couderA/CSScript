@@ -155,6 +155,10 @@ $(function(){
     if (data.caster2) {
       $("#caster2").html(data.caster2)
     }
+    console.log(data)
+    if (data.smashNumber) {
+      $("#smashNumber").html(data.smashNumber)
+    }
     if (data.progressBar) {
       $("#displayerTitle").html(data.progressBar.name)
       displayer = data.progressBar.id
@@ -220,6 +224,9 @@ $(function(){
 
     $(".ScoreContainer .team1 .name").html(teamOneData.name)
     $(".ScoreContainer .team2 .name").html(teamTwoData.name)
+
+    $(".ScoreContainer .team1 #fc1").html(teamOneData.fc)
+    $(".ScoreContainer .team2 #fc2").html(teamTwoData.fc)
 
     $(".ScoreContainer .team1 .score").html(teamOneData.score)
     $(".ScoreContainer .team2 .score").html(teamTwoData.score)

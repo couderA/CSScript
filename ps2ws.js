@@ -14,6 +14,7 @@ ws.on('open', function open() {
 
 ws.on('message', function (data) {
   if (data.indexOf("payload") === 2) {
+    console.log(data)
     match.dealWithTheData(data)
   }
 });
@@ -27,7 +28,7 @@ ws.on('close', function (data) {
 
 const allXpIdsRevives = [
   7,      // Revive (75xp)
-  53      // Squad Revive (100xp)
+  53,      // Squad Revive (100xp)
 ];
 
 function addXpIdToXpGainString(xpID, xpGainString) {
@@ -54,10 +55,10 @@ function getExperienceIds(revives) {
 
 function subscribe(ws) {
   var xpGainString = getExperienceIds(true);
-
+  console.log(xpGainString)
   server_id = match.getServer();
-  ws.send('{"service":"event","action":"subscribe","characters":["all"],"eventNames":["Death", "VehicleDestroy"],"worlds":["' + server_id +'"],"logicalAndCharactersWithWorlds":true}')
-  ws.send('{"service":"event","action":"subscribe","characters":["all"],"eventNames":[' + xpGainString + '],"worlds":["' + server_id +'"],"logicalAndCharactersWithWorlds":true}')
+  // ws.send('{"service":"event","action":"subscribe","characters":["all"],"eventNames":["Death", "VehicleDestroy"],"worlds":["' + server_id +'"],"logicalAndCharactersWithWorlds":true}')
+  ws.send('{"service":"event","action":"subscribe","characters":["all"],"eventNames":[' + xpGainString + '],"worlds":["' + server_id +'"], "zones":["4"],"logicalAndCharactersWithWorlds":true}')
 
   ws.send('{"service":"event","action":"subscribe","worlds":["' + server_id +'"],"eventNames":["FacilityControl"]}');
   console.log("Subscribe to server "+ server_id);
