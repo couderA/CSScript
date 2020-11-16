@@ -163,6 +163,8 @@ body {
 
 .ScoreContainer .score {
   width: 114px;
+  font-size: 2.25rem;
+  margin-top: 6px;
 }
 
 .ScoreContainer .team1 .score {
