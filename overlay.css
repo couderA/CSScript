@@ -157,7 +157,8 @@ body {
 
 
 .ScoreContainer .name {
-  margin-top: 6px;
+  margin-top: 10px;
+  font-size: 1.50rem;
 }
 
 .ScoreContainer .score {
