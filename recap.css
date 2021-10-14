@@ -41,109 +41,136 @@ body {
 
 .progress_bar {
   height: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
+#kills .progress_bar .partLeft {
+  width: calc(var(--percent-kills));
+}
+
+#kills .progress_bar .partRight {
+  width: calc(100% - var(--percent-kills));
+  left: var(--percent-kills);
+}
+
+#kills .progress_bar .cursor {
+  left: calc(var(--percent-kills) - 6px);
+}
+
+#deaths .progress_bar .partLeft {
+  width: calc(var(--percent-deaths));
+}
+
+#deaths .progress_bar .partRight {
+  width: calc(100% - var(--percent-deaths));
+  left: var(--percent-deaths);
+}
+
+#deaths .progress_bar .cursor {
+  left: calc(var(--percent-deaths) - 6px);
+}
+
+#revives .progress_bar .partLeft {
+  width: calc(var(--percent-revives));
+}
+
+#revives .progress_bar .partRight {
+  width: calc(100% - var(--percent-revives));
+  left: var(--percent-revives);
+}
+
+#revives .progress_bar .cursor {
+  left: calc(var(--percent-revives) - 6px);
+}
+
+#maxRevive .progress_bar .partLeft {
+  width: calc(var(--percent-maxRevive));
+}
+
+#maxRevive .progress_bar .partRight {
+  width: calc(100% - var(--percent-maxRevive));
+  left: var(--percent-maxRevive);
+}
+
+#maxRevive .progress_bar .cursor {
+  left: calc(var(--percent-maxRevive) - 6px);
+}
+
+#nanitesLost .progress_bar .partLeft {
+  width: calc(var(--percent-nanitesLost));
+}
+
+#nanitesLost .progress_bar .partRight {
+  width: calc(100% - var(--percent-nanitesLost));
+  left: var(--percent-nanitesLost);
+}
+
+#nanitesLost .progress_bar .cursor {
+  left: calc(var(--percent-nanitesLost) - 6px);
+}
+
+#vehicleKilled .progress_bar .partLeft {
+  width: calc(var(--percent-vehicleKilled));
+}
+
+#vehicleKilled .progress_bar .partRight {
+  width: calc(100% - var(--percent-vehicleKilled));
+  left: var(--percent-vehicleKilled);
+}
+
+#vehicleKilled .progress_bar .cursor {
+  left: calc(var(--percent-vehicleKilled) - 6px);
+}
+
+#vehicleLost .progress_bar .partLeft {
+  width: calc(var(--percent-vehicleLost));
+}
+
+#vehicleLost .progress_bar .partRight {
+  width: calc(100% - var(--percent-vehicleLost));
+  left: var(--percent-vehicleLost);
+}
+
+#vehicleLost .progress_bar .cursor {
+  left: calc(var(--percent-vehicleLost) - 6px);
+}
+
+.progress_bar .partLeft {
+  background-image: url(PNG/cheeseTR.png);
+  height: 100%;
   border-radius: 4px;
-  -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-  -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset 0px -2px 2px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset 0px -2px 2px rgba(0, 0, 0, .4);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset 0px -2px 2px rgba(0, 0, 0, .4);
 }
 
-#kills .progress_bar {
-  background: linear-gradient(
-    90deg,
-    var(--color-team1-dark) 0%,
-    var(--color-team1-light) calc(var(--percent-kills) - 1%),
-    rgb(110, 85, 25) calc(var(--percent-kills) - 0.7%),
-    rgb(235, 224, 146) calc(var(--percent-kills) - 0.2%),
-    rgb(255, 255, 255) var(--percent-kills),
-    rgb(235, 224, 146) calc(var(--percent-kills) + 0.2%),
-    rgb(110, 85, 25) calc(var(--percent-kills) + 0.7%),
-    var(--color-team2-light) calc(var(--percent-kills) + 1%),
-    var(--color-team2-dark) 100%);
+.progress_bar .partRight {
+  background-image: url(PNG/beerNC.png);
+  height: 100%;
+  position: relative;
+  top: -50px;
+  bottom: 0px;
+  border-radius: 4px;
+  -moz-box-shadow: inset 0px 0px 0px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset 0px 0px 0px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  box-shadow: inset 0px 0px 0px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
 }
 
-#deaths .progress_bar {
-  background: linear-gradient(
-    90deg,
-    var(--color-team1-dark) 0%,
-    var(--color-team1-light) calc(var(--percent-deaths) - 1%),
-    rgb(110, 85, 25) calc(var(--percent-deaths) - 0.7%),
-    rgb(235, 224, 146) calc(var(--percent-deaths) - 0.2%),
-    rgb(255, 255, 255) var(--percent-deaths),
-    rgb(235, 224, 146) calc(var(--percent-deaths) + 0.2%),
-    rgb(110, 85, 25) calc(var(--percent-deaths) + 0.7%),
-    var(--color-team2-light) calc(var(--percent-deaths) + 1%),
-    var(--color-team2-dark) 100%);
+.progress_bar .cursor {
+  width: 12px;
+  height: 100%;
+  position: relative;
+  top: -100px;
+  border-radius: 4px;
+  background: linear-gradient( 
+90deg, rgb(110, 85, 25) 0%, rgb(235, 224, 146) 40%, rgb(255, 255, 255) 50%, rgb(235, 224, 146) 60%, rgb(110, 85, 25) 100%);
+-moz-box-shadow: inset 0px 2px 2px rgba(255, 255, 255, .4), inset 0px -2px 2px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset 0px 2px 2px rgba(255, 255, 255, .4), inset 0px -2px 2px rgba(0, 0, 0, .4);
+  box-shadow: inset 0px 2px 2px rgba(255, 255, 255, .4), inset 0px -2px 2px rgba(0, 0, 0, .4);
 }
 
-#revives .progress_bar {
-  background: linear-gradient(
-    90deg,
-    var(--color-team1-dark) 0%,
-    var(--color-team1-light) calc(var(--percent-revives) - 1%),
-    rgb(110, 85, 25) calc(var(--percent-revives) - 0.7%),
-    rgb(235, 224, 146) calc(var(--percent-revives) - 0.2%),
-    rgb(255, 255, 255) var(--percent-revives),
-    rgb(235, 224, 146) calc(var(--percent-revives) + 0.2%),
-    rgb(110, 85, 25) calc(var(--percent-revives) + 0.7%),
-    var(--color-team2-light) calc(var(--percent-revives) + 1%),
-    var(--color-team2-dark) 100%);
-}
-
-#maxRevive .progress_bar {
-  background: linear-gradient(
-    90deg,
-    var(--color-team1-dark) 0%,
-    var(--color-team1-light) calc(var(--percent-maxRevive) - 1%),
-    rgb(110, 85, 25) calc(var(--percent-maxRevive) - 0.7%),
-    rgb(235, 224, 146) calc(var(--percent-maxRevive) - 0.2%),
-    rgb(255, 255, 255) var(--percent-maxRevive),
-    rgb(235, 224, 146) calc(var(--percent-maxRevive) + 0.2%),
-    rgb(110, 85, 25) calc(var(--percent-maxRevive) + 0.7%),
-    var(--color-team2-light) calc(var(--percent-maxRevive) + 1%),
-    var(--color-team2-dark) 100%);
-}
-
-#nanitesLost .progress_bar {
-  background: linear-gradient(
-    90deg,
-    var(--color-team1-dark) 0%,
-    var(--color-team1-light) calc(var(--percent-nanitesLost) - 1%),
-    rgb(110, 85, 25) calc(var(--percent-nanitesLost) - 0.7%),
-    rgb(235, 224, 146) calc(var(--percent-nanitesLost) - 0.2%),
-    rgb(255, 255, 255) var(--percent-nanitesLost),
-    rgb(235, 224, 146) calc(var(--percent-nanitesLost) + 0.2%),
-    rgb(110, 85, 25) calc(var(--percent-nanitesLost) + 0.7%),
-    var(--color-team2-light) calc(var(--percent-nanitesLost) + 1%),
-    var(--color-team2-dark) 100%);
-}
-
-#vehicleKilled .progress_bar {
-  background: linear-gradient(
-    90deg,
-    var(--color-team1-dark) 0%,
-    var(--color-team1-light) calc(var(--percent-vehicleKilled) - 1%),
-    rgb(110, 85, 25) calc(var(--percent-vehicleKilled) - 0.7%),
-    rgb(235, 224, 146) calc(var(--percent-vehicleKilled) - 0.2%),
-    rgb(255, 255, 255) var(--percent-vehicleKilled),
-    rgb(235, 224, 146) calc(var(--percent-vehicleKilled) + 0.2%),
-    rgb(110, 85, 25) calc(var(--percent-vehicleKilled) + 0.7%),
-    var(--color-team2-light) calc(var(--percent-vehicleKilled) + 1%),
-    var(--color-team2-dark) 100%);
-}
-
-#vehicleLost .progress_bar {
-  background: linear-gradient(
-    90deg,
-    var(--color-team1-dark) 0%,
-    var(--color-team1-light) calc(var(--percent-vehicleLost) - 1%),
-    rgb(110, 85, 25) calc(var(--percent-vehicleLost) - 0.7%),
-    rgb(235, 224, 146) calc(var(--percent-vehicleLost) - 0.2%),
-    rgb(255, 255, 255) var(--percent-vehicleLost),
-    rgb(235, 224, 146) calc(var(--percent-vehicleLost) + 0.2%),
-    rgb(110, 85, 25) calc(var(--percent-vehicleLost) + 0.7%),
-    var(--color-team2-light) calc(var(--percent-vehicleLost) + 1%),
-    var(--color-team2-dark) 100%);
-}
 
 .ProgressBar {
   text-align: center;

@@ -32,7 +32,7 @@ app.engine('html', engines.mustache);
 app.set('view engine', 'html');
 
 function myAuthorizer(username, password) {
-    return (username == "CSAdmin" && password == "communitysmash2020") || (username == "Fara" && password == "CasterCS2020")
+    return (username == "admin" && password == "admin")
 }
 
 var challengeAuth = basicAuth({

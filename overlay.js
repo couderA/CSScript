@@ -141,7 +141,7 @@ $(function(){
 
   socket.on('notifBaseCap', function(data) {
     var class_name = "team" + data.team_id
-    $(".NotifContainer ."+ class_name).html(data.name + "Cap" )
+    $(".NotifContainer ."+ class_name).html(data.name)
     $(".NotifContainer ."+ class_name).removeClass("hidden")
     setTimeout(function(){
       $(".NotifContainer ."+ class_name).addClass("hidden")

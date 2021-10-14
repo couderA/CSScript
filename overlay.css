@@ -42,22 +42,22 @@ body {
 }
 
 #Background.NC-TR {
-  background-image: url(PNG/testOverlay-NC-TR.png);
+  background-image: url(PNG/frenchsmash.png);
 }
 #Background.NC-VS {
-  background-image: url(PNG/testOverlay-NC-VS.png);
+  background-image: url(PNG/frenchsmash.png);
 }
 #Background.TR-NC {
-  background-image: url(PNG/testOverlay-TR-NC.png);
+  background-image: url(PNG/frenchsmash.png);
 }
 #Background.TR-VS {
-  background-image: url(PNG/testOverlay-TR-VS.png);
+  background-image: url(PNG/frenchsmash.png);
 }
 #Background.VS-TR {
-  background-image: url(PNG/testOverlay-VS-TR.png);
+  background-image: url(PNG/frenchsmash.png);
 }
 #Background.VS-NC {
-  background-image: url(PNG/testOverlay-VS-NC.png);
+  background-image: url(PNG/frenchsmash.png);
 }
 
 .ScoreContainer {
@@ -77,7 +77,7 @@ body {
   color: white;
   left:  calc(50% - 55px);
   text-align: center;
-  margin-top: 142px;
+  margin-top: 136px;
   font-size: 1.3em;
 }
 
@@ -157,14 +157,16 @@ body {
 
 
 .ScoreContainer .name {
-  margin-top: 10px;
-  font-size: 1.50rem;
+  margin-top: 5px;
+  font-size: 1rem;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
 
 .ScoreContainer .score {
   width: 114px;
   font-size: 2.25rem;
-  margin-top: 6px;
+  margin-top: 3px;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
 
 .ScoreContainer .team1 .score {
@@ -177,23 +179,47 @@ body {
 
 .progress_bar {
   height: 50px;
-  background: linear-gradient(
-    90deg,
-    var(--color-team1-dark) 0%,
-    var(--color-team1-light) calc(var(--percent) - 1%),
-    rgb(110, 85, 25) calc(var(--percent) - 0.7%),
-    rgb(235, 224, 146) calc(var(--percent) - 0.2%),
-    rgb(255, 255, 255) var(--percent),
-    rgb(235, 224, 146) calc(var(--percent) + 0.2%),
-    rgb(110, 85, 25) calc(var(--percent) + 0.7%),
-    var(--color-team2-light) calc(var(--percent) + 1%),
-    var(--color-team2-dark) 100%);
-    border-radius: 4px;
-    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  margin-left: 0px;
+  margin-right: 0px;
   }
 
+  .progress_bar .partLeft {
+    background-image: url(PNG/cheeseTR.png);
+    width: calc(var(--percent));
+    height: 100%;
+    border-radius: 4px;
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset 0px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset 0px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset 0px -2px 2px rgba(0, 0, 0, .4);
+  }
+
+  .progress_bar .partRight {
+    background-image: url(PNG/beerNC.png);
+    width: calc(100% - var(--percent));
+    height: 100%;
+    position: relative;
+    top: -50px;
+    bottom: 0px;
+    border-radius: 4px;
+    left: var(--percent);
+    -moz-box-shadow: inset 0px 0px 0px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 0px 0px 0px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 0px 0px 0px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  }
+
+  .progress_bar .cursor {
+    width: 12px;
+    left: calc(var(--percent) - 6px);
+    height: 100%;
+    position: relative;
+    top: -100px;
+    border-radius: 4px;
+    background: linear-gradient( 
+90deg, rgb(110, 85, 25) 0%, rgb(235, 224, 146) 40%, rgb(255, 255, 255) 50%, rgb(235, 224, 146) 60%, rgb(110, 85, 25) 100%);
+-moz-box-shadow: inset 0px 2px 2px rgba(255, 255, 255, .4), inset 0px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 0px 2px 2px rgba(255, 255, 255, .4), inset 0px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 0px 2px 2px rgba(255, 255, 255, .4), inset 0px -2px 2px rgba(0, 0, 0, .4);
+  }
 
   .centered {
     text-align: center;
@@ -320,6 +346,6 @@ body {
   }
 
   .fc {
-    margin-top: 25px;
+    margin-top: 27px;
     font-size: 0.7em;
   }

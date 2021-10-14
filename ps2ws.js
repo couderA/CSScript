@@ -57,7 +57,7 @@ function subscribe(ws) {
   var xpGainString = getExperienceIds(true);
   console.log(xpGainString)
   server_id = match.getServer();
-  // ws.send('{"service":"event","action":"subscribe","characters":["all"],"eventNames":["Death", "VehicleDestroy"],"worlds":["' + server_id +'"],"logicalAndCharactersWithWorlds":true}')
+  ws.send('{"service":"event","action":"subscribe","characters":["all"],"eventNames":["Death", "VehicleDestroy"],"worlds":["' + server_id +'"],"logicalAndCharactersWithWorlds":true}')
   ws.send('{"service":"event","action":"subscribe","characters":["all"],"eventNames":[' + xpGainString + '],"worlds":["' + server_id +'"], "zones":["4"],"logicalAndCharactersWithWorlds":true}')
 
   ws.send('{"service":"event","action":"subscribe","worlds":["' + server_id +'"],"eventNames":["FacilityControl"]}');
