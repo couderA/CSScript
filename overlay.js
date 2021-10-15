@@ -156,8 +156,8 @@ $(function(){
       $("#caster2").html(data.caster2)
     }
     console.log(data)
-    if (data.smashNumber) {
-      $("#smashNumber").html(data.smashNumber)
+    if (data.smashName) {
+      $("#smashName").html(data.smashName)
     }
     if (data.progressBar) {
       $("#displayerTitle").html(data.progressBar.name)

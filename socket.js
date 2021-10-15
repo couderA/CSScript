@@ -18,7 +18,7 @@ module.exports = {
         });
         socket.on('initializeMatch', function(data) {
           match.setServer(data.server)
-          match.setSmashNumber(data.smashNumber)
+          match.setSmashName(data.smashName)
           match.setContinent(data.continent)
           match.setCaster1(data.caster1)
           match.setCaster2(data.caster2)

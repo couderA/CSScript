@@ -10,7 +10,7 @@ graphs = require('./graphs.js');
 let caster1 = ""
 let caster2 = ""
 
-let smashNumber = 9
+let smashName = "FrenchSmash"
 
 const timer = new Timer()
 
@@ -39,7 +39,7 @@ function getAllInfo() {
     return {
       server:server_id,
       continent:continent_id,
-      smashNumber:smashNumber,
+      smashName:smashName,
       caster1:caster1,
       caster2:caster2,
       minutes:timer.getMinutes(),
@@ -56,8 +56,8 @@ function setTimer(minutes) {
   timer.setMinutes(minutes)
 }
 
-function setSmashNumber(value) {
-  smashNumber = value
+function setSmashName(value) {
+  smashName = value
 }
 
 function setCaster1(value) {
@@ -166,7 +166,7 @@ function reset() {
 
 function refresh() {
   app.send('refresh', {
-    smashNumber:smashNumber,
+    smashName:smashName,
     caster1: caster1,
     caster2: caster2,
     progressBar:progressBar,
@@ -336,7 +336,7 @@ exports.reset = reset;
 exports.refresh = refresh;
 exports.setCaster1 = setCaster1;
 exports.setCaster2 = setCaster2;
-exports.setSmashNumber = setSmashNumber;
+exports.setSmashName = setSmashName;
 exports.setStatsDisplayed = setStatsDisplayed;
 exports.setProgressBar = setProgressBar;
 exports.getProgressBar = getProgressBar;
